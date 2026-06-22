@@ -1,0 +1,70 @@
+{
+  "app": {
+    "title": "스마트 어시스턴트",
+    "subtitle": "당신만의 스마트한 도우미"
+  },
+  "nav": {
+    "dashboard": "홈",
+    "notes": "메모",
+    "meetings": "회의",
+    "translate": "번역",
+    "settings": "설정"
+  },
+  "home": {
+    "greeting": "안녕하세요, 오늘은 무엇을 기록할까요?",
+    "todoSubtitle": "오늘의 ToDo 및 알림",
+    "voiceButton": "음성 녹음 및 AI 요약",
+    "holdToRecord": "길게 누르면 회의 녹음 시작 (STT)",
+    "gpsLocked": "GPS 고정: 타이베이 신이구",
+    "gpsTracking": "GPS 위치 추적 중",
+    "financialQuick": "빠른 가계부 작성"
+  },
+  "notes": {
+    "addNote": "메모 추가",
+    "title": "제목",
+    "content": "탭하여 내용을 입력하세요...",
+    "amount": "금액",
+    "income": "수입",
+    "expense": "지출",
+    "save": "저장 및 동기화",
+    "success": "메모가 성공적으로 저장되었습니다",
+    "food": "식비",
+    "transport": "교통비",
+    "shopping": "쇼핑",
+    "salary": "급여",
+    "other": "기타",
+    "placeholderTitle": "제목 없는 메모"
+  },
+  "translate": {
+    "title": "스마트 번역",
+    "inputPlaceholder": "텍스트를 입력하거나 음성 번역을 사용하세요",
+    "translateButton": "번역",
+    "result": "번역 결과"
+  },
+  "reminders": {
+    "title": "스마트 알림",
+    "addTodo": "알림 추가",
+    "placeholder": "무엇을 해야 합니까?",
+    "reminderTime": "알림 시간 설정",
+    "save": "알림 저장",
+    "notificationTitle": "알림 경고 ⏰",
+    "notificationBody": "설정한 시간이 되었습니다:",
+    "noTodos": "설정된 알림이 없습니다"
+  },
+  "meetings": {
+    "title": "회의 및 요약",
+    "recording": "녹음 중...",
+    "startRecord": "녹음 시작",
+    "stopRecord": "녹음 중지 및 요약 생성",
+    "transcript": "음성 인식 텍스트",
+    "aiSummary": "AI 요약 결론",
+    "conclusion": "회의 결론",
+    "keypoints": "핵심 요점",
+    "actionItems": "실행 항목 (Action Items)",
+    "mockTranscript": "안녕하세요 팀원 여러분, 오늘 우리는 Omni-Assistant의 고급 모듈 아키텍처에 대해 합의했습니다. 알림 모듈은 모의 푸시 알림을 지원하고, 회의 모듈은 음성을 녹음하여 구조화된 AI 결론과 실행 항목을 생성합니다. 번체 중국어, 영어, 일본어, 한국어 간의 원활한 번역을 보장해야 합니다. 오늘 중으로 설정과 에뮬레이터 배포를 완료해 주세요.",
+    "mockConclusion": "고급 모듈 아키텍처에 합의하고 오늘 중 초기화 및 배포를 예약했습니다.",
+    "mockKeypoint1": "알림 모듈은 모의 푸시 알림을 구현해야 합니다.",
+    "mockKeypoint2": "회의 모듈은 동적 파형과 구조화된 AI 요약 레이아웃이 필요합니다.",
+    "mockKeypoint3": "두 가지 모듈 모두 4개 국어 i18n 전환 기능과 통합되어야 합니다."
+  }
+}

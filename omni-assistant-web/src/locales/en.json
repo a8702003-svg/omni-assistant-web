@@ -1,0 +1,72 @@
+{
+  "app": {
+    "title": "Omni-Assistant",
+    "subtitle": "Your Smart Companion"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "notes": "Quick Notes",
+    "meetings": "Meetings",
+    "translate": "Translate",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "overview": "Overview",
+    "financials": "Financial Statistics",
+    "income": "Monthly Income",
+    "expense": "Monthly Expense",
+    "balance": "Net Balance",
+    "recentMeetings": "Recent Meetings & AI Summary",
+    "quickNote": "Quick Note Capture",
+    "todoList": "Today's Reminders",
+    "currencySymbol": "$"
+  },
+  "notes": {
+    "addNote": "Add Thought",
+    "title": "Title",
+    "content": "Tap to write something...",
+    "amount": "Amount",
+    "income": "Income",
+    "expense": "Expense",
+    "save": "Save & Sync",
+    "success": "Note saved successfully",
+    "food": "Food & Dining",
+    "transport": "Transportation",
+    "shopping": "Shopping",
+    "salary": "Salary",
+    "other": "Other",
+    "placeholderTitle": "Untitled Note"
+  },
+  "translate": {
+    "title": "Smart Translate",
+    "inputPlaceholder": "Enter text or use voice translation",
+    "translateButton": "Translate",
+    "result": "Translation Result"
+  },
+  "reminders": {
+    "title": "Smart Reminders",
+    "addTodo": "Add Reminder",
+    "placeholder": "What needs to be done?",
+    "reminderTime": "Set Reminder Time",
+    "save": "Save Reminder",
+    "notificationTitle": "Reminder Alert ⏰",
+    "notificationBody": "It's time for:",
+    "noTodos": "No reminders set"
+  },
+  "meetings": {
+    "title": "Meetings & Summaries",
+    "recording": "Recording...",
+    "startRecord": "Start Recording",
+    "stopRecord": "Stop & Summarize",
+    "transcript": "Speech-to-Text Transcript",
+    "aiSummary": "AI Summary",
+    "conclusion": "Conclusion",
+    "keypoints": "Key Points",
+    "actionItems": "Action Items",
+    "mockTranscript": "Hello team, today we aligned on the advanced module architecture for Omni-Assistant. The Reminder module will support simulated push notifications, and the Meeting module will record audio and generate structured AI conclusions and action items. We must ensure seamless translations across Traditional Chinese, English, Japanese, and Korean. Please complete the setup and emulator deployment today.",
+    "mockConclusion": "Aligned on advanced module architecture and scheduled initialization and deployment for today.",
+    "mockKeypoint1": "Reminder module must implement simulated push notifications.",
+    "mockKeypoint2": "Meeting module requires a dynamic waveform and structured AI summary layout.",
+    "mockKeypoint3": "Both advanced modules need integration with the 4-language i18n switcher."
+  }
+}

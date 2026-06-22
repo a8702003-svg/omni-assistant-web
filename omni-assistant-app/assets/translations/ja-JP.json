@@ -1,0 +1,70 @@
+{
+  "app": {
+    "title": "スマートアシスタント",
+    "subtitle": "あなたのスマートなアシスタント"
+  },
+  "nav": {
+    "dashboard": "ホーム",
+    "notes": "メモ",
+    "meetings": "会議",
+    "translate": "翻訳",
+    "settings": "設定"
+  },
+  "home": {
+    "greeting": "こんにちは、今日はどんな記録を？",
+    "todoSubtitle": "本日のToDo＆リマインダー",
+    "voiceButton": "音声録音とAI要約",
+    "holdToRecord": "長押しで会議録音開始 (STT)",
+    "gpsLocked": "GPSロック：台北市信義区",
+    "gpsTracking": "GPS位置情報を追跡中",
+    "financialQuick": "クイック家計簿"
+  },
+  "notes": {
+    "addNote": "メモを追加",
+    "title": "タイトル",
+    "content": "タップして内容を入力...",
+    "amount": "金額",
+    "income": "収入",
+    "expense": "支出",
+    "save": "保存と同期",
+    "success": "メモが正常に保存されました",
+    "food": "食費",
+    "transport": "交通費",
+    "shopping": "買い物",
+    "salary": "給与",
+    "other": "その他",
+    "placeholderTitle": "無題のメモ"
+  },
+  "translate": {
+    "title": "スマート翻訳",
+    "inputPlaceholder": "テキストを入力するか、音声翻訳を使用",
+    "translateButton": "翻訳",
+    "result": "翻訳結果"
+  },
+  "reminders": {
+    "title": "スマートリマインダー",
+    "addTodo": "リマインダーを追加",
+    "placeholder": "何をすべきですか？",
+    "reminderTime": "リマインダー時間を設定",
+    "save": "リマインダーを保存",
+    "notificationTitle": "リマインダー通知 ⏰",
+    "notificationBody": "設定した時間になりました：",
+    "noTodos": "リマインダーが設定されていません"
+  },
+  "meetings": {
+    "title": "会議と要約",
+    "recording": "録音中...",
+    "startRecord": "録音を開始する",
+    "stopRecord": "録音を停止して要約",
+    "transcript": "音声文字起こし",
+    "aiSummary": "AI要約",
+    "conclusion": "会議の結論",
+    "keypoints": "主なポイント",
+    "actionItems": "アクションアイテム",
+    "mockTranscript": "チームの皆さん、こんにちは。本日はOmni-Assistantの高度なモジュールアーキテクチャについて合意しました。リマインダーモジュールは模擬プッシュ通知をサポートし、会議モジュールは音声を記録して構造化されたAI結論とアクションアイテムを生成します。繁体字中国語、英語、日本語、韓国語にわたるシームレスな翻訳を保証する必要があります。本日中にセットアップとエミュレータのデプロイを完了させてください。",
+    "mockConclusion": "高度なモジュールアーキテクチャについて合意し、本日中の初期化とデプロイを計画しました。",
+    "mockKeypoint1": "リマインダーモジュールは模擬プッシュ通知を実装する必要があります。",
+    "mockKeypoint2": "会議モジュールには動的な波形と構造化されたAI要約レイアウトが必要です。",
+    "mockKeypoint3": "両方のモジュールを4か国語のi18n切替機能と統合する必要があります。"
+  }
+}

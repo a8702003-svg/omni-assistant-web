@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Omni-Assistant Firestore Schema",
+  "description": "Firestore collections and document structures for the Omni-Assistant system.",
+  "collections": {
+    "users": {
+      "description": "User profiles and personalization settings.",
+      "document": {
+        "type": "object",
+        "properties": {
+          "uid": { "type": "string", "description": "Firebase Auth User UID" },
+          "email": { "type": "string", "format": "email" },
+          "displayName": { "type": "string" },
+          "photoURL": { "type": "string", "format": "uri" },
+          "createdAt": { "type": "string", "format": "date-time", "description": "Firestore Timestamp" },
+          "settings": {
+            "type": "object",
+            "properties": {
+              "theme": { "type": "string", "enum": ["dark", "light"] },
+              "preferredLanguage": { "type": "string", "enum": ["zh-TW", "en", "ja", "ko"] },
+              "defaultTranslationTarget": { "type": "string", "enum": ["zh-TW", "en", "ja", "ko"] }
+            },
+            "required": ["theme", "preferredLanguage"]
+          }
+        },
+        "required": ["uid", "email", "createdAt", "settings"]
+      }
+    },
+    "notes": {
+      "description": "Daily thoughts, GPS coordinates, and financial accounting tags.",
+      "document": {
+        "type": "object",
+        "properties": {
+          "noteId": { "type": "string" },
+          "userId": { "type": "string", "description": "Foreign key referencing users.uid" },
+          "title": { "type": "string" },
+          "content": { "type": "string" },
+          "audioUrl": { "type": "string", "format": "uri", "description": "Optional voice recording URL in Storage" },
+          "createdAt": { "type": "string", "format": "date-time" },
+          "updatedAt": { "type": "string", "format": "date-time" },
+          "location": {
+            "type": "object",
+            "properties": {
+              "latitude": { "type": "number" },
+              "longitude": { "type": "number" },
+              "addressName": { "type": "string" }
+            },
+            "required": ["latitude", "longitude"]
+          },
+          "financialRecord": {
+            "type": "object",
+            "properties": {
+              "hasRecord": { "type": "boolean" },
+              "amount": { "type": "number" },
+              "type": { "type": "string", "enum": ["income", "expense"] },
+              "category": { "type": "string", "description": "e.g., food, transport, entertainment, shopping, salary, other" }
+            },
+            "required": ["hasRecord"]
+          }
+        },
+        "required": ["noteId", "userId", "title", "content", "createdAt", "updatedAt"]
+      }
+    },
+    "todos": {
+      "description": "Reminders and tasks for user alerts.",
+      "document": {
+        "type": "object",
+        "properties": {
+          "todoId": { "type": "string" },
+          "userId": { "type": "string", "description": "Foreign key referencing users.uid" },
+          "title": { "type": "string" },
+          "isCompleted": { "type": "boolean" },
+          "dueDate": { "type": "string", "format": "date-time" },
+          "reminderTime": { "type": "string", "format": "date-time" },
+          "notificationSent": { "type": "boolean" },
+          "createdAt": { "type": "string", "format": "date-time" }
+        },
+        "required": ["todoId", "userId", "title", "isCompleted", "notificationSent", "createdAt"]
+      }
+    },
+    "meetings": {
+      "description": "Meeting recordings, transcripts, and AI-generated summaries.",
+      "document": {
+        "type": "object",
+        "properties": {
+          "meetingId": { "type": "string" },
+          "userId": { "type": "string", "description": "Foreign key referencing users.uid" },
+          "title": { "type": "string" },
+          "audioUrl": { "type": "string", "format": "uri" },
+          "transcript": { "type": "string" },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "conclusion": { "type": "string" },
+              "actionItems": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "task": { "type": "string" },
+                    "assignee": { "type": "string" },
+                    "deadline": { "type": "string", "format": "date-time" }
+                  },
+                  "required": ["task"]
+                }
+              }
+            },
+            "required": ["conclusion", "actionItems"]
+          },
+          "durationSeconds": { "type": "number" },
+          "createdAt": { "type": "string", "format": "date-time" }
+        },
+        "required": ["meetingId", "userId", "title", "audioUrl", "transcript", "summary", "durationSeconds", "createdAt"]
+      }
+    },
+    "translations": {
+      "description": "History of smart translations.",
+      "document": {
+        "type": "object",
+        "properties": {
+          "translationId": { "type": "string" },
+          "userId": { "type": "string", "description": "Foreign key referencing users.uid" },
+          "sourceText": { "type": "string" },
+          "sourceLang": { "type": "string" },
+          "targetLang": { "type": "string" },
+          "translatedText": { "type": "string" },
+          "audioUrl": { "type": "string", "format": "uri", "description": "TTS voice output URL in Storage" },
+          "createdAt": { "type": "string", "format": "date-time" }
+        },
+        "required": ["translationId", "userId", "sourceText", "sourceLang", "targetLang", "translatedText", "createdAt"]
+      }
+    }
+  }
+}

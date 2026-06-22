@@ -1,0 +1,70 @@
+{
+  "app": {
+    "title": "全能隨身助理",
+    "subtitle": "您的智慧隨身小秘書"
+  },
+  "nav": {
+    "dashboard": "控制台",
+    "notes": "隨手筆記",
+    "meetings": "會議助理",
+    "translate": "智慧翻譯",
+    "settings": "系統設定"
+  },
+  "home": {
+    "greeting": "哈囉，今天想記錄什麼？",
+    "todoSubtitle": "今日待辦與小秘書提醒",
+    "voiceButton": "語音錄音與會議摘要",
+    "holdToRecord": "長按開始錄製會議 (STT)",
+    "gpsLocked": "GPS 定位：台北市信義區 (已鎖定)",
+    "gpsTracking": "追蹤地理位置中",
+    "financialQuick": "快速隨手記帳"
+  },
+  "notes": {
+    "addNote": "新增想法",
+    "title": "標題",
+    "content": "點擊輸入內容...",
+    "amount": "記帳金額",
+    "income": "收入",
+    "expense": "支出",
+    "save": "儲存並同步",
+    "success": "筆記儲存成功",
+    "food": "餐飲美食",
+    "transport": "交通出行",
+    "shopping": "購物消費",
+    "salary": "薪資收入",
+    "other": "其他支出",
+    "placeholderTitle": "無標題筆記"
+  },
+  "translate": {
+    "title": "智慧翻譯",
+    "inputPlaceholder": "請輸入文字或點擊語音翻譯",
+    "translateButton": "翻譯",
+    "result": "翻譯結果"
+  },
+  "reminders": {
+    "title": "小秘書提醒",
+    "addTodo": "新增提醒事項",
+    "placeholder": "要做些什麼事呢？",
+    "reminderTime": "設定提醒時間",
+    "save": "儲存提醒",
+    "notificationTitle": "小秘書提醒通知 ⏰",
+    "notificationBody": "您設定的時間到了：",
+    "noTodos": "目前沒有待辦事項"
+  },
+  "meetings": {
+    "title": "會議記錄與摘要",
+    "recording": "錄音中...",
+    "startRecord": "開始會議錄音",
+    "stopRecord": "停止錄音並生成摘要",
+    "transcript": "語音轉文字逐字稿",
+    "aiSummary": "AI 智慧摘要",
+    "conclusion": "會議結論",
+    "keypoints": "核心重點",
+    "actionItems": "Action Items 行動清單",
+    "mockTranscript": "各位團隊成員好，今天我們確認了 Omni-Assistant 系統的進階模組架構。小秘書待辦模組要支援推播提醒，而會議記錄模組需要能一鍵錄音並自動生成 AI 會議結論與 Action Items，並確保所有文字在繁中、英文、日文、韓文之間能無縫翻譯。請前端與行動端團隊在今天內完成初始化與模擬器部署。",
+    "mockConclusion": "確認了進階模組的架構細節，並規定今日完成初始化與部署。",
+    "mockKeypoint1": "小秘書待辦功能需實現模擬推播通知。",
+    "mockKeypoint2": "會議模組需內建動態波形與結構化 AI 結論排版。",
+    "mockKeypoint3": "兩大進階模組均需整合四國語系切換。"
+  }
+}
