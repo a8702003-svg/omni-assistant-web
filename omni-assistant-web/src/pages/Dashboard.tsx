@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { 
-  TrendingUp, TrendingDown, Wallet, Mic, MapPin, DollarSign, Plus, CheckCircle, 
-  Play, Square, FileText, Settings, Globe, Check, Star, CheckSquare, Edit3, Save, Calendar
+  TrendingUp, TrendingDown, Plus, CheckCircle, 
+  FileText, Settings, Globe, Check, Star, CheckSquare, Edit3, Save
 } from 'lucide-react';
 
 export default function Dashboard() {
